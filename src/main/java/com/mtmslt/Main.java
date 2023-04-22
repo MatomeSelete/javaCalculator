@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication
+@SpringApplication
 @RestController
 public class Main {
     public static void main(String[] args) {
@@ -14,6 +14,7 @@ public class Main {
 
     @GetMapping( "/")
     public String greet() {
+
         return "Hello";
     }
 
