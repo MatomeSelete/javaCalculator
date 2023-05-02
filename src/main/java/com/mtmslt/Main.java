@@ -21,3 +21,5 @@ public class Main {
     record GreetResponse(String greet) {}
 
 }
+
+// going for SpringBoot tutorial coz wow
