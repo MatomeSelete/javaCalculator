@@ -15,9 +15,12 @@ public class Main {
     }
 
     @GetMapping("/greet")
-    public String greet() {
-        return "Hello Matome we are running";
+    public GreetResponse greet() {
+        return new GreetResponse("Hello Matome ");
     }
+
+    record GreetResponse(String greet) {}
+
 
 }
 
