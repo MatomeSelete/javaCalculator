@@ -21,12 +21,12 @@ public class Main {
          GreetResponse respons = new GreetResponse(
                 "Hello Matome ",
                 List.of("Java", "Python", "JavaScript"),
-                new Person("Alex")
+                new Person("Matome", 25, 100_000)
     );
         return respons;
     }
 
-    record Person(String name) {
+    record Person(String name, int age, double savings) {
 
     }
 
