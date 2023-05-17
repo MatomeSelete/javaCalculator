@@ -70,6 +70,16 @@ public class Customer {
             return Objects.hash(id, name, email, age);
         }
 
+        @Override
+        public String toString() {
+            return "Customer{" +
+                    "id=" + id +
+                    ", name= " + name + '\'' +
+                    ",email= " + email + '\'' +
+                    ", age= " + age +
+                    "}";
+        }
+
 
 
 }
